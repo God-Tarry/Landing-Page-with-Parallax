@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 10vw, 40px);
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+
+h2 {
+    font-size: clamp(50px, 10vw, 100px);
+    color: rgba(255, 255, 255, .9);
+}
+
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: clamp(10px, 5vw, 20px);
+    text-align: justify;
+    line-height: 1.65;
+}
+
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* title styling begins */
+
+.title, .paragraph {
+    padding: 5em 0;
+}
+
+/* title styling ends */
+
+/* parallax styling begins */
+
+.parallax {
+    background-image: url(/assets/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 15em 1em;
+}
+
+.bg__two{
+    background-image: url(./assets/bg-2.jpg);
+}
+
+.bg__three{
+    background-image: url(./assets/bg-3.jpg);
+}
+
+
+/* parallax styling ends */
+
+/* paragraph styling starts */
+
+.paragraph p:nth-of-type(1)::first-letter {
+    font-size: 100px;
+    float: left;
+    color: orange;
+    /* padding-left: .5em; */
+    
+}
+
+.p__two p:nth-of-type(1)::first-letter{
+    color: teal;
+}
+
+.p__three p:nth-of-type(1)::first-letter{
+    color: forestgreen;
+    
+
+}
+
+hr {
+    max-width: 200px;
+
+}
+/* paragraph styling ends */
+
+/* media queries starts */
+
+@media screen and (min-width:100px) {
+
+    .container{
+        max-width: 60%;
+    }
+    
+}
+
+/* media queries ends */
+
+/* so that's the end of my coding session hope yall enjoyed see you in the next one! */
